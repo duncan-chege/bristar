@@ -1,0 +1,14 @@
+.header {
+  height: 70px;
+  width: auto; }
+  .header .header__logo {
+    margin-top: 20px; }
+    .header .header__logo .image {
+      float: left;
+      width: 70px;
+      margin-right: 15px; }
+    .header .header__logo .header__school-name,
+    .header .header__logo .header__school-motto {
+      margin: 5px 0 5px 10px; }
+
+/*# sourceMappingURL=styles.css.map */
