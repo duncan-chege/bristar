@@ -1,14 +1,208 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(assets/roboto/Roboto-Regular.ttf) format("truetype"); }
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; }
+
 .header {
   height: 70px;
-  width: auto; }
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 28px; }
   .header .header__logo {
-    margin-top: 20px; }
+    flex-grow: 0.5;
+    margin-left: 56px;
+    margin-top: 10px; }
     .header .header__logo .image {
       float: left;
-      width: 70px;
-      margin-right: 15px; }
-    .header .header__logo .header__school-name,
+      width: 50px;
+      height: 32px;
+      margin-right: 8px;
+      margin-top: 6px; }
+    .header .header__logo .header__school-name {
+      margin: 0 0 5px 10px;
+      color: #252061;
+      font-size: 16px; }
     .header .header__logo .header__school-motto {
-      margin: 5px 0 5px 10px; }
+      margin: 0;
+      color: rgba(0, 0, 0, 0.38);
+      font-size: 13px; }
+  .header .header__contacts {
+    display: flex;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 16px;
+    flex-grow: 0.4;
+    justify-content: space-evenly; }
+    .header .header__contacts .button__apply {
+      background-color: #252061;
+      padding: 10px 26px;
+      font-size: 13px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 9px;
+      margin-bottom: 24px;
+      border: none; }
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  background-color: #252061;
+  font-size: 15px;
+  justify-content: space-evenly;
+  padding: 16px 20px;
+  flex-grow: 0.5; }
+  .topnav a {
+    color: white;
+    text-decoration: none; }
+  .topnav .topnav__main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    justify-content: space-evenly; }
+  .topnav .topnav__contact {
+    flex-grow: 1;
+    text-align: center; }
+
+.main {
+  position: relative;
+  height: -webkit-fill-available; }
+  .main .main-image {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 30% 32%; }
+  .main .main__icon-left {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    filter: invert(1) sepia(0) saturate(4) hue-rotate(200deg); }
+  .main .main__icon-right {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    filter: invert(1) sepia(0) saturate(4) hue-rotate(200deg);
+    transform: rotateY(180deg); }
+  .main .main__details {
+    position: absolute;
+    top: 73.3%;
+    background-color: rgba(37, 32, 97, 0.77);
+    width: -webkit-fill-available;
+    padding-left: 30px;
+    padding-right: 30px; }
+    .main .main__details h2 {
+      font-size: 30px;
+      color: rgba(255, 255, 255, 0.78);
+      display: inline-block; }
+    .main .main__details .main__details-button {
+      float: right;
+      background-color: white;
+      padding: 10px 32px;
+      font-size: 13px;
+      color: #252061;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      border: none; }
+    .main .main__details .main__facts {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: auto;
+      padding-bottom: 26px; }
+      .main .main__details .main__facts p {
+        margin: 0; }
+      .main .main__details .main__facts .main__facts-quick {
+        padding: 20px 30px;
+        background-color: #252061;
+        color: rgba(255, 255, 255, 0.78); }
+      .main .main__details .main__facts .main__facts-school,
+      .main .main__details .main__facts .main__facts-curriculum,
+      .main .main__details .main__facts .main__facts-classes,
+      .main .main__details .main__facts .main__facts-university,
+      .main .main__details .main__facts .main__facts-college {
+        padding: 10px 30px;
+        background-color: white;
+        color: red;
+        border-right: 1px solid black; }
+        .main .main__details .main__facts .main__facts-school .main__facts-top,
+        .main .main__details .main__facts .main__facts-curriculum .main__facts-top,
+        .main .main__details .main__facts .main__facts-classes .main__facts-top,
+        .main .main__details .main__facts .main__facts-university .main__facts-top,
+        .main .main__details .main__facts .main__facts-college .main__facts-top {
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.54); }
+        .main .main__details .main__facts .main__facts-school .main__facts-bottom,
+        .main .main__details .main__facts .main__facts-curriculum .main__facts-bottom,
+        .main .main__details .main__facts .main__facts-classes .main__facts-bottom,
+        .main .main__details .main__facts .main__facts-university .main__facts-bottom,
+        .main .main__details .main__facts .main__facts-college .main__facts-bottom {
+          font-size: 16px;
+          color: rgba(16, 62, 90, 0.78);
+          padding-top: 5px; }
+
+.featured {
+  background-color: rgba(37, 32, 97, 0.45);
+  padding: 30px; }
+  .featured .featured__title {
+    border-left: 5px solid white;
+    padding-left: 30px;
+    color: white; }
+  .featured .featured__articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 24px; }
+    .featured .featured__articles .featured__articles-text {
+      align-self: center;
+      color: rgba(255, 255, 255, 0.6); }
+    .featured .featured__articles h2 {
+      color: rgba(37, 32, 97, 0.87);
+      font-size: 20px; }
+    .featured .featured__articles .featured__articles-date {
+      color: rgba(0, 0, 0, 0.38);
+      font-size: 10px; }
+    .featured .featured__articles .featured__articles-button {
+      background-color: white;
+      padding: 10px 32px;
+      font-size: 13px;
+      color: #252061;
+      text-decoration: none;
+      cursor: pointer;
+      border: none; }
+    .featured .featured__articles img {
+      width: 600px;
+      height: 320px;
+      object-fit: cover;
+      object-position: 30% 0; }
+  .featured .featured__subarticles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 24px; }
+    .featured .featured__subarticles img {
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+      object-position: 30% 0; }
+    .featured .featured__subarticles .featured__subarticles-content {
+      width: 33%; }
+      .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text {
+        padding: 10px 10px; }
+        .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text h3 {
+          color: rgba(37, 32, 97, 0.87);
+          font-size: 20px; }
+        .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text .featured__subarticles-date {
+          color: rgba(0, 0, 0, 0.38);
+          font-size: 10px; }
+        .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text .featured__subarticles-details {
+          color: white; }
+        .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text .featured__subarticles-more {
+          color: rgba(37, 32, 97, 0.87);
+          font-size: 16px; }
 
 /*# sourceMappingURL=styles.css.map */
