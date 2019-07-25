@@ -10,7 +10,7 @@ body {
   width: auto;
   display: flex;
   flex-direction: row;
-  margin-top: 28px; }
+  margin-top: 8px; }
   .header .header__logo {
     flex-grow: 0.5;
     margin-left: 56px;
@@ -87,7 +87,7 @@ body {
     transform: rotateY(180deg); }
   .main .main__details {
     position: absolute;
-    top: 73.3%;
+    bottom: 0%;
     background-color: rgba(37, 32, 97, 0.77);
     width: -webkit-fill-available;
     padding-left: 30px;
@@ -144,65 +144,198 @@ body {
           color: rgba(16, 62, 90, 0.78);
           padding-top: 5px; }
 
-.featured {
+.key-content {
   background-color: rgba(37, 32, 97, 0.45);
   padding: 30px; }
-  .featured .featured__title {
+
+.featured .featured__title {
+  border-left: 5px solid white;
+  padding-left: 30px;
+  color: white; }
+.featured .featured__articles {
+  background-color: rgba(37, 32, 97, 0.15);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 24px;
+  padding: 30px; }
+  .featured .featured__articles .featured__articles-text {
+    align-self: center;
+    color: rgba(255, 255, 255, 0.6); }
+  .featured .featured__articles h2 {
+    color: rgba(37, 32, 97, 0.87);
+    font-size: 20px; }
+  .featured .featured__articles .featured__articles-date {
+    color: rgba(0, 0, 0, 0.38);
+    font-size: 10px; }
+  .featured .featured__articles .featured__articles-button {
+    background-color: white;
+    padding: 10px 32px;
+    font-size: 13px;
+    color: #252061;
+    text-decoration: none;
+    cursor: pointer;
+    border: none; }
+  .featured .featured__articles img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 30% 0; }
+.featured .featured__subarticles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 24px; }
+  .featured .featured__subarticles img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 30% 0; }
+  .featured .featured__subarticles .featured__subarticles-content {
+    width: 33%; }
+    .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text {
+      padding: 10px 10px;
+      background-color: rgba(37, 32, 97, 0.15); }
+      .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text h3 {
+        color: rgba(37, 32, 97, 0.87);
+        font-size: 20px; }
+      .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text .featured__subarticles-date {
+        color: rgba(0, 0, 0, 0.38);
+        font-size: 10px; }
+      .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text .featured__subarticles-details {
+        color: white; }
+      .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text .featured__subarticles-more {
+        color: rgba(37, 32, 97, 0.87);
+        font-size: 16px; }
+
+.awards {
+  position: relative; }
+  .awards .awards__title {
     border-left: 5px solid white;
     padding-left: 30px;
     color: white; }
-  .featured .featured__articles {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 24px; }
-    .featured .featured__articles .featured__articles-text {
-      align-self: center;
-      color: rgba(255, 255, 255, 0.6); }
-    .featured .featured__articles h2 {
-      color: rgba(37, 32, 97, 0.87);
-      font-size: 20px; }
-    .featured .featured__articles .featured__articles-date {
-      color: rgba(0, 0, 0, 0.38);
-      font-size: 10px; }
-    .featured .featured__articles .featured__articles-button {
-      background-color: white;
-      padding: 10px 32px;
+  .awards img {
+    opacity: 0.5;
+    width: 100%; }
+  .awards .awards__details {
+    position: absolute;
+    top: 30%;
+    left: 5%; }
+    .awards .awards__details h4 {
+      color: white; }
+    .awards .awards__details .awards__details-description {
+      color: rgba(255, 255, 255, 0.9); }
+    .awards .awards__details .awards__details-button {
+      background-color: #252061;
+      padding: 10px 35px;
       font-size: 13px;
-      color: #252061;
+      color: white;
       text-decoration: none;
       cursor: pointer;
       border: none; }
-    .featured .featured__articles img {
-      width: 600px;
-      height: 320px;
+
+.culture {
+  background-color: rgba(37, 32, 97, 0.15);
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px; }
+  .culture .culture__details {
+    width: 20%;
+    align-self: center; }
+  .culture .culture__title {
+    color: black;
+    font-size: 18px; }
+  .culture .culture__text {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 20px 0; }
+  .culture .culture__button {
+    background-color: #252061;
+    padding: 10px 0px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    width: 100%; }
+  .culture .culture__images {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 300px;
+    grid-gap: 4px;
+    margin-left: 16px; }
+    .culture .culture__images img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-      object-position: 30% 0; }
-  .featured .featured__subarticles {
+      object-position: 40% 0; }
+    .culture .culture__images .take-2-columns {
+      grid-column: span 2; }
+    .culture .culture__images .take-2-rows {
+      grid-row: span 2; }
+
+.sports {
+  padding: 30px;
+  display: flex;
+  flex-direction: row; }
+  .sports .sports__details {
+    width: 20%;
+    align-self: center; }
+  .sports .sports__title {
+    color: black;
+    font-size: 18px; }
+  .sports .sports__text {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 20px 0; }
+  .sports .sports__button {
+    background-color: #252061;
+    padding: 10px 0px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    width: 100%; }
+  .sports .sports__images {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 300px;
+    grid-gap: 4px;
+    margin-left: 16px; }
+    .sports .sports__images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 40% 0; }
+    .sports .sports__images .take-2-columns {
+      grid-column: span 2; }
+    .sports .sports__images .take-2-rows {
+      grid-row: span 2; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(37, 32, 97, 0.45);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #252061; }
+  .footer p {
+    margin: 5px; }
+  .footer .footer__school-name {
+    padding-right: 30px;
+    padding-left: 30px;
+    color: white; }
+  .footer .footer__social-media {
+    border-left: 2px solid white;
+    padding-left: 30px;
+    color: white;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 24px; }
-    .featured .featured__subarticles img {
-      width: 400px;
-      height: 300px;
-      object-fit: cover;
-      object-position: 30% 0; }
-    .featured .featured__subarticles .featured__subarticles-content {
-      width: 33%; }
-      .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text {
-        padding: 10px 10px; }
-        .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text h3 {
-          color: rgba(37, 32, 97, 0.87);
-          font-size: 20px; }
-        .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text .featured__subarticles-date {
-          color: rgba(0, 0, 0, 0.38);
-          font-size: 10px; }
-        .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text .featured__subarticles-details {
-          color: white; }
-        .featured .featured__subarticles .featured__subarticles-content .featured__subarticles-text .featured__subarticles-more {
-          color: rgba(37, 32, 97, 0.87);
-          font-size: 16px; }
+    width: 60%;
+    justify-content: space-around; }
 
 /*# sourceMappingURL=styles.css.map */
