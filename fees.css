@@ -122,15 +122,17 @@ body {
     .fees .fees__payments li > p {
       padding-left: 16px;
       color: #252061; }
-  .fees .fees__accounts .fees__accounts-name,
-  .fees .fees__accounts .fees__accounts-bank,
-  .fees .fees__accounts .fees__accounts-branch,
-  .fees .fees__accounts .fees__accounts-number > p {
-    display: flex; }
-    .fees .fees__accounts .fees__accounts-name .fees__accounts-specific,
-    .fees .fees__accounts .fees__accounts-bank .fees__accounts-specific,
-    .fees .fees__accounts .fees__accounts-branch .fees__accounts-specific,
-    .fees .fees__accounts .fees__accounts-number > p .fees__accounts-specific {
-      padding-left: 30px; }
+  .fees .fees__accounts .fees__accounts-title {
+    color: #707070;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 0; }
+  .fees .fees__accounts .fees__accounts-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 50%; }
+    .fees .fees__accounts .fees__accounts-details .fees__accounts-specific {
+      color: rgba(112, 112, 112, 0.78); }
 
 /*# sourceMappingURL=fees.css.map */

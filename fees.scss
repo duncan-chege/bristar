@@ -174,14 +174,20 @@ body {
     }
 
     .fees__accounts {
+        .fees__accounts-title{
+            color: rgba(112, 112, 112, 1);
+            font-size: 18px;
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
 
-        .fees__accounts-name,
-        .fees__accounts-bank,
-        .fees__accounts-branch,
-        .fees__accounts-number>p {
-            display: flex;
+        .fees__accounts-details{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            width: 50%;
             .fees__accounts-specific{
-                padding-left: 30px; 
+                color: rgba(112, 112, 112, 0.78);
             }
         }
     }
