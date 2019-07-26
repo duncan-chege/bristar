@@ -62,7 +62,7 @@ body {
     flex-direction: row;
     flex-grow: 2;
     justify-content: space-evenly; }
-  .topnav .topnav__contact {
+  .topnav .topnav__item-contact {
     flex-grow: 1;
     text-align: center; }
 
@@ -117,11 +117,36 @@ body {
     font-size: 14px; }
   .fees .fees__payments {
     margin-top: 52px; }
-    .fees .fees__payments ol {
-      color: black; }
-    .fees .fees__payments li > p {
-      padding-left: 16px;
-      color: #252061; }
+    .fees .fees__payments .fees__payments-items {
+      display: flex;
+      flex-direction: column; }
+      .fees .fees__payments .fees__payments-items .fees__payments-btn {
+        background-color: #252061;
+        padding: 10px 26px;
+        font-size: 13px;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        width: 20%;
+        margin-bottom: 16px;
+        transition: 0.5s;
+        overflow: hidden; }
+      .fees .fees__payments .fees__payments-items .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        transition: max-height 0.2s ease-out;
+        overflow: hidden; }
+      .fees .fees__payments .fees__payments-items .fees__payments-btn:after {
+        content: '\02795';
+        /*Unicode character for plus sign (+) */
+        font-size: 10px;
+        float: right;
+        margin-left: 5px; }
+      .fees .fees__payments .fees__payments-items .active:after {
+        content: '\2796';
+        /*Unicode character for minus sign (-) */ }
   .fees .fees__accounts .fees__accounts-title {
     color: #707070;
     font-size: 18px;

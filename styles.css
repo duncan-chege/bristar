@@ -62,7 +62,7 @@ body {
     flex-direction: row;
     flex-grow: 2;
     justify-content: space-evenly; }
-  .topnav .topnav__contact {
+  .topnav .topnav__item-contact {
     flex-grow: 1;
     text-align: center; }
 

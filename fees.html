@@ -22,14 +22,14 @@
 
     <div class='topnav'>
         <div class='topnav__main'>
-            <a class='topnav__home' href='#'>Home</a>
-            <a class='topnav__about' href='#'>About Us</a>
-            <a class='topnav__admission' href='#'>Admissions</a>
-            <a class='topnav__scholarship' href='#'>Scholarships</a>
-            <a class='topnav__news' href='#'>News</a>
-            <a class='topnav__events' href='#'>Events</a>
+            <a class='topnav__item' href='#'>Home</a>
+            <a class='topnav__item' href='#'>About Us</a>
+            <a class='topnav__item' href='#'>Admissions</a>
+            <a class='topnav__item' href='#'>Scholarships</a>
+            <a class='topnav__item' href='#'>News</a>
+            <a class='topnav__item' href='#'>Events</a>
         </div>
-        <a class='topnav__contact' href='#'>Contact Us</a>
+        <a class='topnav__item-contact' href='#'>Contact Us</a>
     </div>
 
     <div class='procedure'>
@@ -89,16 +89,23 @@
 
         <div class='fees__payments'>
             <p>How to make payments</p>
-            <ol>
-                <li>
-                    <p>Bank Deposit</p>
-                </li>
-                <li>
-                    <p>Bank Transfer</p>
-                </li>
-                <li>
-                    <p>Mpesa Payments</p>
-                </li>
+            <div class='fees__payments-items'>
+
+                <button class='fees__payments-btn'> Bank Deposit</button>
+                <div class='panel'>
+                    <p> This Service is open to ALL Safaricom PrePay youth subscribers aged between 10 and 26 years.</p>
+                </div>
+
+                <button class='fees__payments-btn'> Bank Transfer</button>
+                <div class='panel'>
+                    <p> This Service is open to ALL Safaricom PrePay youth subscribers aged between 10 and 26 years.</p>
+                </div>
+                
+                <button class='fees__payments-btn'> Mpesa Transfer </button>
+                <div class='panel'>
+                    <p> This Service is open to ALL Safaricom PrePay youth subscribers aged between 10 and 26 years.</p>
+                </div>
+            </div>
         </div>
 
         <div class='fees__accounts'>
@@ -107,20 +114,20 @@
             <div class='fees__accounts-details'>
                 <p> Account Name</p>
                 <p class='fees__accounts-specific'> Bristar Girls' High School</p>
-            
+
                 <p> Bank</p>
                 <p class='fees__accounts-specific'> Co-operative Bank</p>
-            
+
                 <p> Branch</p>
                 <p class='fees__accounts-specific'> Stima Plaza</p>
-            
+
                 <p> Account Number</p>
                 <p class='fees__accounts-specific'> Co-operative Bank</p>
             </div>
-            
+
         </div>
 
-
+        <script src='fees.js'></script>
 </body>
 
 </html>

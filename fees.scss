@@ -83,7 +83,7 @@ body {
         justify-content: space-evenly;
     }
 
-    .topnav__contact {
+    .topnav__item-contact {
         flex-grow: 1;
         text-align: center;
     }
@@ -163,30 +163,62 @@ body {
     .fees__payments {
         margin-top: 52px;
 
-        ol {
-            color: black;
-        }
+        .fees__payments-items {
+            display: flex;
+            flex-direction: column;
 
-        li>p {
-            padding-left: 16px;
-            color: rgba(37, 32, 97, 1);
+            .fees__payments-btn {
+                background-color: rgba(37, 32, 97, 1);
+                padding: 10px 26px;
+                font-size: 13px;
+                color: white;
+                text-decoration: none;
+                cursor: pointer;
+                border: none;
+                width: 20%;
+                margin-bottom: 16px;
+                transition: 0.5s;
+                overflow: hidden;
+            }
+
+            .panel {
+                padding: 0 18px;
+                background-color: white;
+                max-height: 0;
+                transition: max-height 0.2s ease-out;
+                overflow: hidden;
+            }
+
+            .fees__payments-btn:after{
+                content: '\02795';  /*Unicode character for plus sign (+) */
+                font-size: 10px;
+                float: right;
+                margin-left: 5px;
+            }
+
+            .active:after{
+                content: '\2796';  /*Unicode character for minus sign (-) */
+
+            }
+            
         }
     }
 
     .fees__accounts {
-        .fees__accounts-title{
+        .fees__accounts-title {
             color: rgba(112, 112, 112, 1);
             font-size: 18px;
             margin-top: 40px;
             margin-bottom: 0;
         }
 
-        .fees__accounts-details{
+        .fees__accounts-details {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(4, 1fr);
             width: 50%;
-            .fees__accounts-specific{
+
+            .fees__accounts-specific {
                 color: rgba(112, 112, 112, 0.78);
             }
         }
