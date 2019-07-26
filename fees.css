@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(assets/roboto/Roboto-Regular.ttf) format("truetype"); }
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; }
+
+.header {
+  height: 70px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px; }
+  .header .header__logo {
+    flex-grow: 0.5;
+    margin-left: 56px;
+    margin-top: 10px; }
+    .header .header__logo .image {
+      float: left;
+      width: 50px;
+      height: 32px;
+      margin-right: 8px;
+      margin-top: 6px; }
+    .header .header__logo .header__school-name {
+      margin: 0 0 5px 10px;
+      color: #252061;
+      font-size: 16px; }
+    .header .header__logo .header__school-motto {
+      margin: 0;
+      color: rgba(0, 0, 0, 0.38);
+      font-size: 13px; }
+  .header .header__contacts {
+    display: flex;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 16px;
+    flex-grow: 0.4;
+    justify-content: space-evenly; }
+    .header .header__contacts .button__apply {
+      background-color: #252061;
+      padding: 10px 26px;
+      font-size: 13px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 9px;
+      margin-bottom: 24px;
+      border: none; }
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  background-color: #252061;
+  font-size: 15px;
+  justify-content: space-evenly;
+  padding: 16px 20px;
+  flex-grow: 0.5; }
+  .topnav a {
+    color: white;
+    text-decoration: none; }
+  .topnav .topnav__main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    justify-content: space-evenly; }
+  .topnav .topnav__contact {
+    flex-grow: 1;
+    text-align: center; }
+
+.procedure {
+  display: flex;
+  flex-direction: row;
+  background-color: #fafafa;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  justify-content: space-around;
+  font-size: 13px;
+  padding: 16px 240px; }
+  .procedure a {
+    color: rgba(0, 0, 0, 0.38);
+    text-decoration: none; }
+
+.fees {
+  margin: 32px auto;
+  width: 1000px; }
+  .fees .fees__title {
+    color: #252061;
+    font-size: 32px; }
+  .fees .fees__sub-title {
+    color: #707070;
+    font-size: 18px;
+    margin: 24px 0; }
+  .fees .fees__forms {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    width: 500px;
+    justify-content: space-between; }
+    .fees .fees__forms .fees__form-1 {
+      color: #252061; }
+    .fees .fees__forms .fees__form-2,
+    .fees .fees__forms .fees__form-3,
+    .fees .fees__forms .fees__form-4 {
+      color: #707070; }
+  .fees table {
+    width: 100%;
+    margin-top: 24px; }
+  .fees table,
+  .fees th,
+  .fees td {
+    border-collapse: collapse; }
+  .fees th {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.38);
+    font-size: 14px;
+    text-align: left; }
+  .fees td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 12px;
+    font-size: 14px; }
+  .fees .fees__payments {
+    margin-top: 52px; }
+    .fees .fees__payments ol {
+      color: black; }
+    .fees .fees__payments li > p {
+      padding-left: 16px;
+      color: #252061; }
+  .fees .fees__accounts .fees__accounts-name,
+  .fees .fees__accounts .fees__accounts-bank,
+  .fees .fees__accounts .fees__accounts-branch,
+  .fees .fees__accounts .fees__accounts-number > p {
+    display: flex; }
+    .fees .fees__accounts .fees__accounts-name .fees__accounts-specific,
+    .fees .fees__accounts .fees__accounts-bank .fees__accounts-specific,
+    .fees .fees__accounts .fees__accounts-branch .fees__accounts-specific,
+    .fees .fees__accounts .fees__accounts-number > p .fees__accounts-specific {
+      padding-left: 30px; }
+
+/*# sourceMappingURL=fees.css.map */
