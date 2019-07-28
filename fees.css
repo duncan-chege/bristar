@@ -132,21 +132,26 @@ body {
         margin-bottom: 16px;
         transition: 0.5s;
         overflow: hidden; }
-      .fees .fees__payments .fees__payments-items .panel {
-        padding: 0 18px;
-        background-color: white;
-        max-height: 0;
-        transition: max-height 0.2s ease-out;
-        overflow: hidden; }
       .fees .fees__payments .fees__payments-items .fees__payments-btn:after {
         content: '\02795';
         /*Unicode character for plus sign (+) */
         font-size: 10px;
         float: right;
         margin-left: 5px; }
-      .fees .fees__payments .fees__payments-items .active:after {
+      .fees .fees__payments .fees__payments-items .active::after {
         content: '\2796';
         /*Unicode character for minus sign (-) */ }
+      .fees .fees__payments .fees__payments-items .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+        overflow: hidden;
+        opacity: 0; }
+      .fees .fees__payments .fees__payments-items .show {
+        opacity: 1;
+        max-height: 60px;
+        margin-top: -10px; }
   .fees .fees__accounts .fees__accounts-title {
     color: #707070;
     font-size: 18px;
