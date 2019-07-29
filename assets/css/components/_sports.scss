@@ -1,0 +1,42 @@
+.sports {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+
+    .sports__details {
+        width: 20%;
+        align-self: center;
+    }
+
+    .sports__title {
+        color: $officialBlack;
+        font-size: 18px;
+    }
+
+    .sports__text {
+        color: $lighterWhite;
+        margin: 20px 0;
+    }
+
+    // .sports__button {
+    //     @extend %sports__button;
+    // }
+
+    .sports__images {
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 300px;
+        grid-gap: 4px;
+        margin-left: 16px;
+
+        .take-2-columns {
+            grid-column: span 2;
+        }
+
+        .take-2-rows {
+            grid-row: span 2;
+        }
+    }
+}

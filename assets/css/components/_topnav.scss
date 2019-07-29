@@ -1,0 +1,46 @@
+.topnav {
+    .mainmenu__item, .submenu__item {
+        &.selected {
+            font-weight: bold;
+        }
+    }
+
+    .topnav__mainmenu {
+        display: flex;
+        flex-direction: row;
+        background-color: $officialBlue;
+        font-size: 15px;
+        justify-content: space-evenly;
+        padding: 16px 20px;
+        flex-grow: 0.5;
+
+        // [class*="mainmenu__item"] {
+        //     color: $officialWhite;
+        // }
+
+        .mainmenu__item{
+            color: $officialWhite;
+        }
+
+        .mainmenu__item--contact {
+            flex-grow: 0.3;
+            text-align: center;
+            color: $officialWhite;
+            text-decoration: underline;
+        }
+    }
+
+    .topnav__submenu {
+        display: flex;
+        flex-direction: row;
+        background-color: $officialWhite;
+        box-shadow: 0 3px 6px $lightBlack;
+        justify-content: space-around;
+        font-size: 15px;
+        padding: 16px 240px;
+
+        .submenu__item {
+            color: $officialBlack;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.header__logo {
+    flex-grow: 0.5;
+    margin-left: 56px;
+    margin-top: 10px;
+
+    .image {
+        float: left;
+        width: 50px;
+        height: 32px;
+        margin-right: 8px;
+        margin-top: 6px;
+    }
+
+    .header__school-name {
+        margin: 0 0 5px 10px;
+        color: $officialBlue;
+        font-size: 16px;
+    }
+
+    .header__school-motto {
+        margin: 0;
+        color: $officialBlack;
+        font-size: 13px;
+    }
+}
+
+.header__contacts {
+    display: flex;
+    color: $officialBlack;
+    font-size: 16px;
+    flex-grow: 0.4;
+    justify-content: space-evenly;
+
+
+}

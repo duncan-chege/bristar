@@ -1,0 +1,44 @@
+.culture {
+    background-color: $lighterBlue;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+
+    .culture__details {
+        width: 20%;
+        align-self: center;
+    }
+
+    .culture__title {
+        color: $officialBlack;
+        font-size: 18px;
+    }
+
+    .culture__text {
+        color: $lighterWhite;
+        margin: 20px 0;
+    }
+
+    // .culture__button {
+    //     @extend %culture__button;
+    // }
+
+    .culture__images {
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 300px;
+        grid-gap: 4px;
+        margin-left: 16px;
+
+        .take-2-columns {
+            grid-column: span 2;
+        }
+
+        .take-2-rows {
+            grid-row: span 2;
+        }
+    }
+}

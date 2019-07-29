@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: $lightBlue;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: $officialBlue;
+
+    .footer__school-name {
+        padding-right: 30px;
+        padding-left: 30px;
+        color: $officialWhite;
+    }
+
+    .footer__social-media {
+        border-left: 2px solid $officialWhite;
+        padding-left: 30px;
+        color: $officialWhite;
+        display: flex;
+        width: 60%;
+        justify-content: space-around;
+    }
+}

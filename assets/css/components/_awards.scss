@@ -1,0 +1,33 @@
+.awards {
+    position: relative;
+    margin-top: 24px;
+
+    .awards__image {
+        margin-top: 24px;
+
+    }
+
+    .awards__title {
+        border-left: 5px solid $officialWhite;
+        padding-left: 30px;
+        color: $officialWhite;
+    }
+
+    .awards__details {
+        position: absolute;
+        top: 13.5%;
+        bottom: 1%;
+        width: 100%;
+        padding-top: 70px;
+        padding-left: 5%;
+        background: $officialBlack;
+
+        .awards__details-description {
+            color: $semiWhite;
+        }
+
+        // .awards__details-button {
+        //     @extend %awards__details-button;
+        // }
+    }
+}

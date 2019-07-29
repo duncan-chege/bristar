@@ -1,0 +1,25 @@
+.btn{
+    @include blue-button;
+}
+
+.btn-white {
+    @include white-button;
+    margin-top: 16px;
+}
+
+.fees-btn {
+    @include blue-button;
+    margin-top: 9px;
+    margin-bottom: 24px;
+}
+
+.btn-white-main__details {
+    @include white-button;
+    float: right;
+    margin-bottom: 24px;
+}
+
+.btn-culture, .btn-sports{
+    @include blue-button;
+    width: 100%;
+}
