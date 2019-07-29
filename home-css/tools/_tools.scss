@@ -1,0 +1,19 @@
+@mixin blue-button {
+    background-color: $officialBlue;
+    padding: 10px 26px;
+    font-size: 13px;
+    color: $officialWhite;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+@mixin white-button{
+    background-color: $officialWhite;
+    padding: 10px 32px;
+    font-size: 13px;
+    color: $officialBlue;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+$fontType: 'Roboto', sans-serif;
+
+$officialBlue: rgba(37, 32, 97, 1); 
+$dullBlue: rgba(37, 32, 97, 0.87);
+$officialBlack: rgba(0, 0, 0, 0.38);
+$officialWhite: white;
+$semiBlue: rgba(37, 32, 97, 0.77);
+$lightBlue: rgba(37, 32, 97, 0.45);
+$lighterBlue: rgba(37, 32, 97, 0.15);
+$semiWhite: rgba(255, 255, 255, 0.78);
+$lighterWhite: rgba(255, 255, 255, 0.6);
