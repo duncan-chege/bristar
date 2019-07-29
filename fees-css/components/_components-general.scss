@@ -1,79 +1,54 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url(assets/roboto/Roboto-Regular.ttf) format("truetype");
-}
+@import 'components-button';
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-}
+.header__logo {
+    flex-grow: 0.5;
+    margin-left: 56px;
+    margin-top: 10px;
 
-.header {
-    height: 70px;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    margin-top: 8px;
-
-    .header__logo {
-        flex-grow: 0.5;
-        margin-left: 56px;
-        margin-top: 10px;
-
-        .image {
-            float: left;
-            width: 50px;
-            height: 32px;
-            margin-right: 8px;
-            margin-top: 6px;
-        }
-
-        .header__school-name {
-            margin: 0 0 5px 10px;
-            color: rgba(37, 32, 97, 1);
-            font-size: 16px;
-        }
-
-        .header__school-motto {
-            margin: 0;
-            color: rgba(0, 0, 0, 0.38);
-            font-size: 13px;
-        }
+    .image {
+        float: left;
+        width: 50px;
+        height: 32px;
+        margin-right: 8px;
+        margin-top: 6px;
     }
 
-    .header__contacts {
-        display: flex;
-        color: rgba(0, 0, 0, 0.54);
+    .header__school-name {
+        margin: 0 0 5px 10px;
+        color: $officialBlue;
         font-size: 16px;
-        flex-grow: 0.4;
-        justify-content: space-evenly;
+    }
 
-        .button__apply {
-            background-color: rgba(37, 32, 97, 1);
-            padding: 10px 26px;
-            font-size: 13px;
-            color: white;
-            text-decoration: none;
-            cursor: pointer;
-            margin-top: 9px;
-            margin-bottom: 24px;
-            border: none;
-        }
+    .header__school-motto {
+        margin: 0;
+        color: $officialBlack;
+        font-size: 13px;
+    }
+}
+
+.header__contacts {
+    display: flex;
+    color: $officialBlack;
+    font-size: 16px;
+    flex-grow: 0.4;
+    justify-content: space-evenly;
+
+    .button__apply {
+        @extend %button__apply;
     }
 }
 
 .topnav {
     display: flex;
     flex-direction: row;
-    background-color: rgba(37, 32, 97, 1);
+    background-color: $officialBlue;
     font-size: 15px;
     justify-content: space-evenly;
     padding: 16px 20px;
     flex-grow: 0.5;
 
     a {
-        color: white;
-        text-decoration: none;
+        color: $officialWhite;
     }
 
     .topnav__main {
@@ -92,29 +67,29 @@ body {
 .procedure {
     display: flex;
     flex-direction: row;
-    background-color: rgba(250, 250, 250, 1);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: $officialWhite;
+    box-shadow: 0 3px 6px $lightBlack;
     justify-content: space-around;
     font-size: 13px;
     padding: 16px 240px;
 
     a {
-        color: rgba(0, 0, 0, 0.38);
-        text-decoration: none;
+        color: $officialBlack;
     }
 }
+
 
 .fees {
     margin: 32px auto;
     width: 1000px;
 
     .fees__title {
-        color: rgba(37, 32, 97, 1);
+        color: $semiBlue;
         font-size: 32px;
     }
 
     .fees__sub-title {
-        color: rgba(112, 112, 112, 1);
+        color: $grey;
         font-size: 18px;
         margin: 24px 0;
     }
@@ -127,37 +102,14 @@ body {
         justify-content: space-between;
 
         .fees__form-1 {
-            color: rgba(37, 32, 97, 1);
+            color: $officialBlue;
         }
 
         .fees__form-2,
         .fees__form-3,
         .fees__form-4 {
-            color: rgba(112, 112, 112, 1);
+            color: $grey;
         }
-    }
-
-    table {
-        width: 100%;
-        margin-top: 24px;
-    }
-
-    table,
-    th,
-    td {
-        border-collapse: collapse;
-    }
-
-    th {
-        border-bottom: 2px solid rgba(0, 0, 0, 0.38);
-        font-size: 14px;
-        text-align: left;
-    }
-
-    td {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-        padding: 12px;
-        font-size: 14px;
     }
 
     .fees__payments {
@@ -168,13 +120,7 @@ body {
             flex-direction: column;
 
             .fees__payments-btn {
-                background-color: rgba(37, 32, 97, 1);
-                padding: 10px 26px;
-                font-size: 13px;
-                color: white;
-                text-decoration: none;
-                cursor: pointer;
-                border: none;
+                @extend %button__apply;
                 width: 20%;
                 margin-bottom: 16px;
                 transition: 0.5s;
@@ -197,7 +143,7 @@ body {
 
             .panel {
                 padding: 0 18px;
-                background-color: white;
+                background-color: $officialWhite;
                 max-height: 0;
                 transition: max-height 0.5s ease-out;
                 overflow: hidden;
@@ -214,7 +160,7 @@ body {
 
     .fees__accounts {
         .fees__accounts-title {
-            color: rgba(112, 112, 112, 1);
+            color: $grey;
             font-size: 18px;
             margin-top: 40px;
             margin-bottom: 0;
@@ -227,9 +173,11 @@ body {
             width: 50%;
 
             .fees__accounts-specific {
-                color: rgba(112, 112, 112, 0.78);
+                color: $grey;
             }
         }
     }
 
 }
+
+//    a: color: white;
